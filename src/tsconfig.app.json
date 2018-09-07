@@ -1,10 +1,13 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "moduleResolution": "node",
     "outDir": "../out-tsc/app",
-    "types": []
+    "types": ["node"]
   },
   "exclude": [
+    "node_modules",
+    "opencv.js",
     "src/test.ts",
     "**/*.spec.ts"
   ]
